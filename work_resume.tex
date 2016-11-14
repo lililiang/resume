@@ -1,0 +1,138 @@
+%% start of file `template-zh.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv 主题
+\moderncvstyle{casual}                        % 选项参数是 ‘casual’, ‘classic’, ‘oldstyle’ 和 ’banking’
+\moderncvcolor{blue}                          % 选项参数是 ‘blue’ (默认)、‘orange’、‘green’、‘red’、‘purple’ 和 ‘grey’
+%\nopagenumbers{}                             % 消除注释以取消自动页码生成功能
+
+% 字符编码
+\usepackage[utf8]{inputenc}                   % 替换你正在使用的编码
+\usepackage{CJKutf8}
+
+% 调整页面出血
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % 如果你希望改变日期栏的宽度
+
+% 个人信息
+\name{}{李亮}
+\title{PHP开发工程师}                     % 可选项、如不需要可删除本行
+%\address{街道及门牌号}{邮编及城市}            % 可选项、如不需要可删除本行
+\phone[mobile]{130~2714~6059}              % 可选项、如不需要可删除本行
+%\phone[fixed]{+2~(345)~678~901}               % 可选项、如不需要可删除本行
+%\phone[fax]{+3~(456)~789~012}                 % 可选项、如不需要可删除本行
+\email{liliang\_hust@163.com}                    % 可选项、如不需要可删除本行
+\homepage{blog.csdn.net/asdfglili}                  % 可选项、如不需要可删除本行
+\extrainfo{Powered by Tex}                 % 可选项、如不需要可删除本行
+\photo[64pt][0.4pt]{resume}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
+%\quote{引言(可选项)}                          % 可选项、如不需要可删除本行
+
+% 显示索引号;仅用于在简历中使用了引言
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% 分类索引
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            内容
+%----------------------------------------------------------------------------------
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}                       % 详情参阅CJK文件包
+\maketitle
+
+\section{教育背景}
+\cventry{2011年 -- 2015年}{本科}{华中科技大学}{985}{\textit{TOP 10}}{}  % 第3到第6编码可留白
+%\cventry{年 -- 年}{学位}{院校}{城市}{\textit{成绩}}{说明}
+
+%\section{毕业论文}
+%\cvitem{题目}{\emph{题目}}
+%\cvitem{导师}{导师}
+%\cvitem{说明}{\small 论文简介}
+
+\section{工作背景}
+\subsection{全职\&实习}
+\cventry{2014年10月 -- 2016年10月}{PHP开发工程师}{杭州王耀网络科技有限公司}{杭州}{}{主要负责公司web端以及移动端后台的开发迭代和维护\newline{}%
+工作内容:%
+\begin{itemize}%
+\item 负责web端产品的开发、优化、维护:
+  \begin{itemize}
+  \item 面对用户的快速上涨（数十万～数百万），参与进行架构的重构，通过引入缓存系统，异步任务系统，拆分RPC服务等方法，很好的完成了从小型网站到中型网站规模的架构演进，以应对数百万级别用户的服务
+    \begin{itemize}
+    \item 引入以Redis缓存结构，利用Redis多样的数据结构来支撑后台逻辑业务;
+    \item 利用开源异步任务框架，来搭建自己的异步任务系统，支撑某些业务需求;
+    \item 利用高性能Swoole扩展，拆分第三方服务，以应对频次较高的用户服务请求;
+    \end{itemize}
+  \item 面对日常业务需求，利用TP框架完成日常开发任务，主要负责后台逻辑的开发，以及维护15W+行核心代码，快速优质的满足了日常的开发需求
+  \end{itemize}
+\item 负责移动端后台接口的开发以、优化、维护:
+  \begin{itemize}
+  \item 面对公司启动移动端的产品策略，负责移动端接口的整体项目，通过修改TP框架内核以适应移动端接口的开发需求，独立开发维护全部400+接口，引入开源文档管理工具来维护接口文档，后续修改框架来实现更优雅的代码组织方式，以保证接口服务的健壮可用
+  \end{itemize}
+\item 主业务相关的子系统的开发维护、部署上线，包括后台管理系统，小游戏系统，消息推送系统等;
+  \begin{itemize}
+    \item 利用TP5 + bootstrap，搭建后台管理系统，以满足社区管理的业务需求;
+    \item 利用TP5框架，修改框架逻辑，搭建可以生成小游戏的管理后台;
+    \item 利用TP5 + PHP Swoole 搭建全站的消息推送系统;
+  \end{itemize}
+\end{itemize}}
+\subsection{实习}
+\cventry{2014年07月 -- 2014年09月}{软件开发实习生}{上海自仪泰雷兹交通自动化公司}{上海}{}{负责维护公司开发文档，负责参与日常开发会议，了解项目流程，完善开发文档}
+
+
+\section{计算机技能}
+\cvdoubleitem{PHP}{TP, Lavarel}{++++}{}
+\cvdoubleitem{NOSQL}{Redis}{+++}{}
+\cvdoubleitem{SQL}{MySQL}{+++}{}
+\cvdoubleitem{C}{C98}{+++}{}
+\cvdoubleitem{服务器}{Apache, Nginx}{++}{}
+\cvdoubleitem{OS}{Ubuntu, Debian, CentOS}{++}{}
+\cvdoubleitem{Python}{flask, scrapy}{++}{}
+\cvdoubleitem{前端}{HTML, CSS, JS}{++}{}
+\cvdoubleitem{算法}{k-means, CF等}{+}{}
+
+
+\section{个人项目经历}
+\cvlistitem{基于半监督学习的人脸识别系统}
+\cvlistitem{基于BOW模型的模式识别}
+\cvlistitem{基于CodeIgniter框架的管理系统}
+\cvlistitem{基于百度地图的web动画}
+\cvlistitem{物流仿真管理软件}
+
+\section{语言技能}
+\cvitemwithcomment{英语}{CET--4}{}
+%\cvitemwithcomment{语言 2}{水平}{评价}
+
+\section{个人兴趣}
+\cvitem{读书}{\small 最近读一些计算机原理相关的书，如《深入理解计算机系统》等}
+\cvitem{健身}{\small 保持身体健康}
+\cvitem{看戏}{\small 喜欢传统文化}
+
+% 来自BibTeX文件但不使用multibib包的出版物
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% BibTeX的数字标签
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                    % 'publications' 是BibTeX文件的文件名
+
+% 来自BibTeX文件并使用multibib包的出版物
+%\section{出版物}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}               % 'publications' 是BibTeX文件的文件名
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}               % 'publications' 是BibTeX文件的文件名
+
+\clearpage\end{CJK}
+\end{document}
+
+
+%% 文件结尾 `template-zh.tex'.

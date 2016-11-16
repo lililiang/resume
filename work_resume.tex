@@ -30,9 +30,9 @@
 %\phone[fax]{+3~(456)~789~012}                 % 可选项、如不需要可删除本行
 \email{liliang\_hust@163.com}                    % 可选项、如不需要可删除本行
 \homepage{blog.csdn.net/asdfglili}                  % 可选项、如不需要可删除本行
-\extrainfo{Powered by Tex}                 % 可选项、如不需要可删除本行
+\extrainfo{Powered by TeX}                 % 可选项、如不需要可删除本行
 \photo[64pt][0.4pt]{resume}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
-%\quote{引言(可选项)}                          % 可选项、如不需要可删除本行
+%\quote{来源自V2EX}                          % 可选项、如不需要可删除本行
 
 % 显示索引号;仅用于在简历中使用了引言
 %\makeatletter
@@ -50,7 +50,7 @@
 \maketitle
 
 \section{教育背景}
-\cventry{2011年 -- 2015年}{本科}{华中科技大学}{985}{\textit{TOP 10}}{}  % 第3到第6编码可留白
+\cventry{2011年 -- 2015年}{本科}{华中科技大学}{985}{\textit{TOP 25\%}}{}  % 第3到第6编码可留白
 %\cventry{年 -- 年}{学位}{院校}{城市}{\textit{成绩}}{说明}
 
 %\section{毕业论文}
@@ -77,10 +77,13 @@
   \begin{itemize}
   \item 面对公司启动移动端的产品策略，负责移动端接口的整体项目，通过修改TP框架内核以适应移动端接口的开发需求，独立开发维护全部400+接口，引入开源文档管理工具来维护接口文档，后续修改框架来实现更优雅的代码组织方式，以保证接口服务的健壮可用
   \end{itemize}
+\item 负责用户时间轴系统的开发、优化、维护:
+  \begin{itemize}
+  \item 为了满足用户个性化的产品体验，重新构建了Timeline系统，通过高性能的Swoole扩展，以及自身的推荐算法机制，实现了足以支撑百万级用户量的个性化feed流推荐，提高了用户社区的活跃度，基本满足了向用户展示优质的个性化内容的要求。
+  \end{itemize}
 \item 主业务相关的子系统的开发维护、部署上线，包括后台管理系统，小游戏系统，消息推送系统等;
   \begin{itemize}
     \item 利用TP5 + bootstrap，搭建后台管理系统，以满足社区管理的业务需求;
-    \item 利用TP5框架，修改框架逻辑，搭建可以生成小游戏的管理后台;
     \item 利用TP5 + PHP Swoole 搭建全站的消息推送系统;
   \end{itemize}
 \end{itemize}}
